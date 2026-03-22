@@ -21,11 +21,6 @@
       timeout = 1;
     };
 
-    boot.kernelParams = [
-      "console=tty0"
-      "earlycon=uart8250,mmio32,0xfe660000"
-    ];
-
     boot.initrd.availableKernelModules = [
       "sdhci_of_dwcmshc"
       "dw_mmc_rockchip"
